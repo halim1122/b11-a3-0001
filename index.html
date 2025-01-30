@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse 4 pets</title>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .adlam {
+        font-family: "ADLaM Display", serif;
+    }
+
+    .sora {
+        font-family: "Sora", serif;
+    }
+</style>
+
+<body class="max-w-[1600px] ">
+    <!-- header section  -->
+    <header>
+        <!-- navbar section  -->
+        <!-- sm size  -->
+        <div class="lg:hidden flex justify-between w-full py-3 px-4 bg-[#FFF9F4]">
+            <img src="assets/logo-header.png" alt="">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar section  -->
+        <!-- lg size  -->
+        <div class="hidden px-[140px] py-[26px] bg-[#FFF9F4] lg:flex lg:justify-between lg:items-center ">
+            <div class="flex gap-2">
+                <img src="assets/logo-header.png" alt="">
+                <h2 class="text-[26px]">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+            </div>
+            <div>
+                <ul class="flex gap-8">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-bell"></i></a>
+                <button class="btn px-[30px] py-[10px] text-black btn-warning btn-outline text-xl text-center">Login</button>
+                <button class="btn px-[30px] py-[10px] bg-[#FFDC26] text-xl text-center">Register</button>
+            </div>
+        </div>
+    </header>
+    <!-- main section  -->
+    <main>
+        
+    </main>
+    <!-- footer section  -->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
