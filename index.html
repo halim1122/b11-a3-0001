@@ -24,9 +24,34 @@
     .adlam {
         font-family: "ADLaM Display", serif;
     }
-
+.hover:hover{
+    background-color: #ffeb87;
+    padding: 6px 10px;
+    border-radius:50% ;
+}
+.hover1:hover{
+    color: #ffd500;
+}
     .sora {
         font-family: "Sora", serif;
+    }
+    .center h1, .center p {
+        user-select: none;
+        
+        color: white;
+        background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+        background-size: 600vw 600vw;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: slide 10s linear infinite forwards;
+    }
+    @keyframes slide {
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position-x:600vw ;
+        }
     }
 </style>
 
@@ -62,14 +87,14 @@
             </div>
             <div>
                 <ul class="flex gap-8">
-                    <li><a>Find a pet</a></li>
-                    <li><a>Breeds</a></li>
-                    <li><a>Contact us</a></li>
+                    <li><a class="hover1">Find a pet</a></li>
+                    <li><a class="hover1">Breeds</a></li>
+                    <li><a class="hover1">Contact us</a></li>
                 </ul>
             </div>
             <div class="flex gap-3 items-center">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href=""><i class="fa-regular fa-bell"></i></a>
+                <a class="hover" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="hover" href=""><i class="fa-regular fa-bell"></i></a>
                 <button
                     class="btn px-[30px] py-[10px] text-black btn-warning btn-outline text-xl text-center">Login</button>
                 <button class="btn px-[30px] py-[10px] bg-[#FFDC26] text-xl text-center">Register</button>
@@ -79,10 +104,13 @@
         <section class=" lg:mx-[140px] h-[400px] lg:h-[800px] mx-4 mt-8 relative lg:mt-[76px] ">
             <div><img class="absolute top-40 lg:top-1 w-full" src="assets/cat-big.png" alt=""></div>
             <div class=" lg:w-[680px]">
-                <h1 class="adlam lg:text-6xl text-3xl lg:py-5">Pamper Your Pet, <br> Because They Deserve the Bes</h1>
-                <p class="lg:text-xl py-3 lg:pb-6 text-gray-500">Discover a world of treats, toys, and essentials
-                    handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="btn px-[30px] py-[10px] bg-[#FFDC26] text-xl text-center">Find a pet</button>
+                <div class="center"><h1 class="adlam lg:text-7xl text-3xl lg:py-5">Pamper Your Pet, <br> Because They Deserve the Bes</h1>
+                </div>
+                <div class="center">
+                    <p class="lg:text-2xl py-3 lg:pb-6 text-gray-500">Discover a world of treats, toys, and essentials
+                        handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                </div>
+                <div><button class="btn px-[30px] py-[10px] bg-[#FFDC26] text-xl text-center">Find a pet</button></div>
             </div>
         </section>
     </header>
